@@ -19,32 +19,10 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-.grid {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  padding: 20px;
-  
-}
-div:has(> button) {
-  margin: 0 auto;
-  padding: 10px;
-  margin-bottom: 10px;
-} 
+ 
 
 
-.popup {
-  display: grid;
-  background-color: black;
-  color: white;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 10px;
-  grid-template-rows: 1fr 1fr;
-  inline-size: min(215px, 100%);
-}
 
-div:has(> p) {
-  padding-left: 20px;
-  padding-top: 20px;
-}
+
+
+
