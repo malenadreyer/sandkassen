@@ -7,9 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-custom': 'linear-gradient(294deg, #C8DCE5 0%, #B6CCDA 100%)',
+      },
+      lineHeight: {
+        'custom': '4rem',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        darkGray60: 'rgba(67, 69, 88, 0.6)',
+        lightTeal: 'rgba(106, 221, 204, 0.6)',  
+        peach: 'rgba(249, 205, 196, 0.6)',
       },
     },
   },
