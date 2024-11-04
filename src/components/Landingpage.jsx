@@ -53,9 +53,8 @@ const LandingPage = () => {
                 </div>
                 </div>
             </div>
-            <div class="grid grid-row-3 ">
+            <div class="flex flex-col items-center mt-auto mb-auto" >
                 <RundKnap bgColor="bg-darkGray60"/>
-        
                 <RundKnap bgColor="bg-lightTeal"/>
                 <RundKnap bgColor="bg-peach"/>
             </div>

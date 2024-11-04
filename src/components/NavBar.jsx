@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between rounded-lg py-4 max-w-7xl mx-auto">
       <a className="cursor-pointer" href="#">
-        <AiFillApple size={50} />
+        <AiFillApple size={50} color="white" />
       </a>
 
       <div className="flex space-x-6 text-white">
@@ -20,11 +20,11 @@ const Navbar = () => {
 
       <div className="flex space-x-4">
         <a className="cursor-pointer" href="#">
-          <FiSearch size={24} />
+          <FiSearch size={24} color="white"/>
         </a>
         <div className="w-px h-6 bg-white"></div>
         <a className="cursor-pointer" href="#">
-          <FiShoppingBag size={24} />
+          <FiShoppingBag size={24} color="white" />
         </a>
       </div>
     </div>

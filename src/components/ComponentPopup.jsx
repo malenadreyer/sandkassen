@@ -4,6 +4,7 @@ import Button from "./Button";
 
 
 const ComponentPopup = () => {
+    const cookieIsAccepted = true;
     return ( 
         <div class="grid grid-rows-3, grid-cols-1 bg-black text-white rounded-xl fixed bottom-5 right-5 h-64 w-56">
             <div class="flex flex-col space-y-2">
@@ -14,7 +15,7 @@ const ComponentPopup = () => {
            <p>We use cookies to improve your user experience.</p>
         </div>
         <div class="grid m-auto	">
-        <Button text="I like Cookies"/>
+        <Button text="I like Cookies"></Button> 
         </div>
         </div>
      );
