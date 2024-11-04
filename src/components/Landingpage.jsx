@@ -2,10 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import imgSrc from "../../public/5.png"
-import SortImg from "../../public/sort.png"
-import TealImg from "../../public/gron.png"
-import PinkImg from "../../public/pink.png"
+import SortImg from "../../public/navy.png"
+import TealImg from "../../public/mint.png"
+import PinkImg from "../../public/ocean.png"
 import { Poppins, Roboto_Flex } from '@next/font/google';
 import PictureWBagground from "./PictureWBagground";
 import RundKnap from "./RundCirkel";
