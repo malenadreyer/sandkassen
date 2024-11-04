@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import imgSrc from "../../public/5.png"
 import SortImg from "../../public/sort.png"
@@ -7,6 +10,7 @@ import { Poppins, Roboto_Flex } from '@next/font/google';
 import PictureWBagground from "./PictureWBagground";
 import RundKnap from "./RundCirkel";
 import Navbar from "./NavBar";
+
 import { HiArrowLongLeft, HiArrowLongRight} from "react-icons/hi2";
 
 
@@ -21,7 +25,13 @@ const poppins = Poppins({
   });
 
 const LandingPage = () => {
+    const [imgSrc, setImgSrc] = useState(SortImg);
+
+    const handleImageChange = (newImage) => {setImgSrc(newImage)};
+
     return ( 
+    
+
         <section class="bg-gradient-custom">
             <Navbar/>
         <section class="grid grid-cols-[4fr_2fr_1fr] max-w-[1100px] w-full mx-auto text-white">
@@ -46,17 +56,17 @@ const LandingPage = () => {
                 </div>
                 <div class="grid justify-center">
                 <div className="flex space-x-4 items-end justify-center pb-12">
-                    <PictureWBagground bgColor="bg-darkGray60" imageSkift={SortImg}/>
-                    <PictureWBagground bgColor="bg-lightTeal" imageSkift={TealImg}/>
-                    <PictureWBagground bgColor="bg-peach" imageSkift={PinkImg}/>
+                    <PictureWBagground bgColor="bg-darkGray60" imageSkift={SortImg} onClick={() =>handleImageChange(SortImg)}/>
+                    <PictureWBagground bgColor="bg-lightTeal" imageSkift={TealImg} onClick={() => handleImageChange(TealImg)}/>
+                    <PictureWBagground bgColor="bg-peach" imageSkift={PinkImg} onClick={() => handleImageChange(PinkImg)} />
                 
                 </div>
                 </div>
             </div>
             <div class="flex flex-col items-center mt-auto mb-auto" >
-                <RundKnap bgColor="bg-darkGray60"/>
-                <RundKnap bgColor="bg-lightTeal"/>
-                <RundKnap bgColor="bg-peach"/>
+                <RundKnap bgColor="bg-darkGray60" onClick={() =>handleImageChange(SortImg)}/>
+                <RundKnap bgColor="bg-lightTeal" onClick={() =>handleImageChange(TealImg)}/>
+                <RundKnap bgColor="bg-peach"onClick={() =>handleImageChange(PinkImg)} />
             </div>
             </section>
             

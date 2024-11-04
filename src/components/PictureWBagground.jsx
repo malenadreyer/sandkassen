@@ -1,10 +1,11 @@
 import Image from 'next/image';
 
 
-const PictureWBagground = ({bgColor, imageSkift}) => {
+const PictureWBagground = ({onClick, bgColor, imageSkift}) => {
     return ( 
         <div className="relative flex flex-col items-center cursor-pointer" >
         <Image
+        onClick={onClick}
             src={imageSkift}
             alt="image of applewatch"
             layout="intrinsic" 
