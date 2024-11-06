@@ -57,7 +57,7 @@ const LandingPage = () => {
                 <div className="flex space-x-4 items-end justify-center pb-12">
                     <PictureWBagground bgColor="bg-darkGray60" imageSkift={SortImg} onClick={() =>handleImageChange(SortImg)}/>
                     <PictureWBagground bgColor="bg-lightTeal" imageSkift={TealImg} onClick={() => handleImageChange(TealImg)}/>
-                    <PictureWBagground bgColor="bg-peach" imageSkift={PinkImg} onClick={() => handleImageChange(PinkImg)} />
+                    <PictureWBagground bgColor="bg-ocean" imageSkift={PinkImg} onClick={() => handleImageChange(PinkImg)} />
                 
                 </div>
                 </div>
@@ -65,7 +65,7 @@ const LandingPage = () => {
             <div class="flex flex-col items-center mt-auto mb-auto" >
                 <RundKnap bgColor="bg-darkGray60" onClick={() =>handleImageChange(SortImg)}/>
                 <RundKnap bgColor="bg-lightTeal" onClick={() =>handleImageChange(TealImg)}/>
-                <RundKnap bgColor="bg-peach"onClick={() =>handleImageChange(PinkImg)} />
+                <RundKnap bgColor="bg-ocean"onClick={() =>handleImageChange(PinkImg)} />
             </div>
             </section>
             

@@ -18,7 +18,7 @@ module.exports = {
         foreground: "var(--foreground)",
         darkGray60: 'rgba(67, 69, 88, 0.6)',
         lightTeal: 'rgba(106, 221, 204, 0.6)',  
-        peach: 'rgba(249, 205, 196, 0.6)',
+        ocean: 'rgb(196,216,226)',
       },
     },
   },

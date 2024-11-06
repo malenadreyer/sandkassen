@@ -1,12 +1,10 @@
-import ComponentsPopup from "../components/ComponentPopup"
-import LandingPage from "@/components/Landingpage";
+import TodoApp from "../components/TodoApp"
 
 
 export default function Home() {
   return (
     <div>
-      <LandingPage/>
-     <ComponentsPopup/>
+     <TodoApp/>
     </div>
   );
 }
