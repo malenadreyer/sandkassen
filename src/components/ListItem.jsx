@@ -5,7 +5,7 @@ const ListItem = ({ task, deleteTask, toggleComplete }) => {
         <li style={{ textDecoration: task.completed ? "line-through" : "none" }}>
             {task.text}
             <button onClick={() => toggleComplete(task.id)}>
-                {task.completed ? "Mark Incomplete" : "Mark Complete"}
+                {task.completed ? "Undo" : "Done"}
             </button>
             <button onClick={() => deleteTask(task.id)}>Delete</button>
         </li>

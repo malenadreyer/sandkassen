@@ -4,7 +4,7 @@ import ListItem from './ListItem';
 const List = ({ tasks, deleteTask, toggleComplete }) => {
     return (
         <div>
-            <h2>Incomplete Tasks</h2>
+            <h2>Todo List</h2>
             <ul>
                 {tasks.filter(task => !task.completed).map(task => (
                     <ListItem
@@ -16,7 +16,7 @@ const List = ({ tasks, deleteTask, toggleComplete }) => {
                 ))}
             </ul>
 
-            <h2>Completed Tasks</h2>
+            <h2>Completed List</h2>
             <ul>
                 {tasks.filter(task => task.completed).map(task => (
                     <ListItem
