@@ -17,7 +17,7 @@ const ToDoApp = () => {
             text: taskText,
             completed: false,
         };
-        setTasks([...tasks, newTask]);
+        setTasks(tasks.concat(newTask));
         event.target.reset();
     }
 
